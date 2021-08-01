@@ -230,5 +230,14 @@ h1 {
     grid-column: span 1;
   }
 }
+.card-deck__img {
+  max-width: 30%;
+  height: auto;
+}
+
+.featured__img {
+  width: 25%;
+  height: auto;
+}
 
 /*# sourceMappingURL=main.css.map */
