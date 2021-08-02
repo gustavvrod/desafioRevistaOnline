@@ -2,26 +2,20 @@
 
 //navbar
 .navbar {
-    position: relative;
-    padding: 1em 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 4em;
     background-color: $violet-soft;
 }
 
 //navbar brand
 .navbar__brand {
-    position: absolute;
-    top: .5em;
-    left: 4.5em;
     a {
         text-decoration: none;
         color: $smoky-black;
     }
-}
-
-//navbar container
-.navbar__container {
-    position: absolute;
-    width: 80%;
 }
 
 //navbar list
@@ -39,9 +33,9 @@
 //navbar item{
 .navbar__item {
     a {
-        display: block;
+        display: none;
         text-align: left;
-        padding: .5em;
+        padding: 0.5em;
         padding: 10px;
         text-decoration: none;
         font-family: $georama;
@@ -50,8 +44,11 @@
     }
 }
 
-//navbar hr
-.navbar__hr {
-    position: relative;
-    top: 2em;
+//media hide links display sm
+@include respond-to('small') {
+    .navbar__item {
+        a {
+            display: block;
+        }
+    }
 }

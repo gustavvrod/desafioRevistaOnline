@@ -1,5 +1,13 @@
 /*inputs*/
 
+//navbar input
+.navbar__input {
+    font-family: $georama;
+    font-weight: $light;
+    border: none;
+    width: 10em;
+}
+
 //newsletter input
 .newsletter__input {
     input {

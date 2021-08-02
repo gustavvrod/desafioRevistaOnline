@@ -21,3 +21,8 @@ sans-serif;
 //font weigth 
 $light: 300;
 $bold: 600;
+
+/*breakpoint*/
+
+//breakpoints
+$breakpoints: ('x-small': (min-width: 360px), 'small': (min-width: 576px), 'medium': (min-width: 768px), 'large': (min-width: 992px), 'huge': (min-width: 1200px), );

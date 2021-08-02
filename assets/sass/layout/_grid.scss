@@ -7,24 +7,6 @@
     padding-right: 15px;
 }
 
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-@media(min-width:992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
-
 
 /*row*/
 
@@ -37,56 +19,49 @@
 /*col*/
 
 //vw-port xs
-.col-xs-12 {
-    grid-column: span 12;
+@include respond-to('x-small') {
+    .col-xs-12 {
+        grid-column: span 12;
+    }
+    .col-xs-11 {
+        grid-column: span 11;
+    }
+    .col-xs-10 {
+        grid-column: span 10;
+    }
+    .col-xs-9 {
+        grid-column: span 9;
+    }
+    .col-xs-8 {
+        grid-column: span 8;
+    }
+    .col-xs-7 {
+        grid-column: span 7;
+    }
+    .col-xs-6 {
+        grid-column: span 6;
+    }
+    .col-xs-5 {
+        grid-column: span 5;
+    }
+    .col-xs-4 {
+        grid-column: span 4;
+    }
+    .col-xs-3 {
+        grid-column: span 3;
+    }
+    .col-xs-2 {
+        grid-column: span 2;
+    }
+    .col-xs-1 {
+        grid-column: span 1;
+    }
 }
 
-.col-xs-11 {
-    grid-column: span 11;
-}
-
-.col-xs-10 {
-    grid-column: span 10;
-}
-
-.col-xs-9 {
-    grid-column: span 9;
-}
-
-.col-xs-8 {
-    grid-column: span 8;
-}
-
-.col-xs-7 {
-    grid-column: span 7;
-}
-
-.col-xs-6 {
-    grid-column: span 6;
-}
-
-.col-xs-5 {
-    grid-column: span 5;
-}
-
-.col-xs-4 {
-    grid-column: span 4;
-}
-
-.col-xs-3 {
-    grid-column: span 3;
-}
-
-.col-xs-2 {
-    grid-column: span 2;
-}
-
-.col-xs-1 {
-    grid-column: span 1;
-}
-
-//vw-port sm
-@media(min-width:768px) {
+@include respond-to('small') {
+    .container {
+        width: 552px;
+    }
     .col-sm-12 {
         grid-column: span 12;
     }
@@ -125,8 +100,10 @@
     }
 }
 
-//vw-port md
-@media (min-width: 992px) {
+@include respond-to('medium') {
+    .container {
+        width: 750px;
+    }
     .col-md-12 {
         grid-column: span 12;
     }
@@ -165,8 +142,10 @@
     }
 }
 
-//vw-port lg
-@media (min-width: 1200px) {
+@include respond-to('large') {
+    .container {
+        width: 970px;
+    }
     .col-lg-12 {
         grid-column: span 12;
     }
@@ -204,3 +183,59 @@
         grid-column: span 1;
     }
 }
+
+@include respond-to('huge') {
+    .container {
+        width: 1170px;
+    }
+    .col-xl-12 {
+        grid-column: span 12;
+    }
+    .col-xl-11 {
+        grid-column: span 11;
+    }
+    .col-xl-10 {
+        grid-column: span 10;
+    }
+    .col-xl-9 {
+        grid-column: span 9;
+    }
+    .col-xl-8 {
+        grid-column: span 8;
+    }
+    .col-xl-7 {
+        grid-column: span 7;
+    }
+    .col-xl-6 {
+        grid-column: span 6;
+    }
+    .col-xl-5 {
+        grid-column: span 5;
+    }
+    .col-xl-4 {
+        grid-column: span 4;
+    }
+    .col-xl-3 {
+        grid-column: span 3;
+    }
+    .col-xl-2 {
+        grid-column: span 2;
+    }
+    .col-xl-1 {
+        grid-column: span 1;
+    }
+}
+
+
+/*
+//vw-port sm
+@media(min-width:576px) {}
+
+//vw-port md
+@media(min-width:768px) {}
+
+//vw-port lg
+@media (min-width: 992px) {}
+
+//vw-port xl
+@media (min-width: 1200px) {} */
