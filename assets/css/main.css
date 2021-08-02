@@ -1,8 +1,79 @@
 /*manifest*/
 /*variables*/
-h1 {
+/*color Scheme*/
+/*typography*/
+/*base*/
+h3 {
   font-family: "Georama", sans-serif;
   font-weight: 600;
+}
+
+h5 {
+  font-family: "Georama", sans-serif;
+  font-weight: 300;
+}
+
+/*reset*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  text-decoration: none;
+}
+
+/*navbar*/
+.navbar {
+  position: relative;
+  padding: 1em 6em;
+  background-color: #86b3d1;
+}
+
+.navbar__brand {
+  position: absolute;
+  top: 0.5em;
+  left: 4.5em;
+}
+.navbar__brand a {
+  text-decoration: none;
+  color: #0C0910;
+}
+
+.navbar__container {
+  position: absolute;
+  width: 80%;
+}
+
+.navbar__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar__item a {
+  display: block;
+  text-align: left;
+  padding: 0.5em;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Georama", sans-serif;
+  font-weight: 600;
+  color: #f2f2f2;
+}
+
+.navbar__hr {
+  position: relative;
+  top: 2em;
 }
 
 /*container grid*/
@@ -230,14 +301,84 @@ h1 {
     grid-column: span 1;
   }
 }
+/*card deck*/
+.card-deck {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #edb5bf;
+}
+.card-deck h3,
+.card-deck h5 {
+  color: #0C0910;
+}
+
+.card-deck__card {
+  margin: 20px;
+}
+
 .card-deck__img {
-  max-width: 30%;
-  height: auto;
+  max-width: 100%;
+  height: 75vh;
 }
 
 .featured__img {
-  width: 25%;
+  width: 90%;
   height: auto;
+}
+
+/*footer*/
+.footer {
+  padding: 0.1em;
+  text-align: center;
+  background-color: #5f6366;
+  color: #f2f2f2;
+}
+
+/*newsletter*/
+.newsletter__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d6d9a;
+  padding: 2em;
+}
+.newsletter__container h3,
+.newsletter__container h5 {
+  color: #f2f2f2;
+}
+
+/*buttons*/
+.tags__btn {
+  padding: 5px;
+  margin: 0 3px;
+  font-family: "Georama", sans-serif;
+  font-weight: 600;
+  background-color: #99ced3;
+  color: #5f6366;
+  border: none;
+}
+.tags__btn:hover {
+  color: #f2f2f2;
+}
+
+/*inputs*/
+.newsletter__input input {
+  font-family: "Georama", sans-serif;
+  font-weight: 600;
+  border: none;
+}
+.newsletter__input .newsletter__input-submit {
+  background-color: #99ced3;
+  color: #5f6366;
+}
+.newsletter__input .newsletter__input-submit:hover {
+  color: #f2f2f2;
+}
+.newsletter__input .newsletter__input-box {
+  width: 15em;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,15 @@
+/*buttons*/
+
+//tag button
+.tags__btn {
+    padding: 5px;
+    margin: 0 3px;
+    font-family: $georama;
+    font-weight: $bold;
+    background-color: $cian-soft;
+    color: $gray;
+    border: none;
+    &:hover {
+        color: $white;
+    }
+}

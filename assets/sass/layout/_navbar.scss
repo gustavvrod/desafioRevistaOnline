@@ -1,0 +1,57 @@
+/*navbar*/
+
+//navbar
+.navbar {
+    position: relative;
+    padding: 1em 6em;
+    background-color: $violet-soft;
+}
+
+//navbar brand
+.navbar__brand {
+    position: absolute;
+    top: .5em;
+    left: 4.5em;
+    a {
+        text-decoration: none;
+        color: $smoky-black;
+    }
+}
+
+//navbar container
+.navbar__container {
+    position: absolute;
+    width: 80%;
+}
+
+//navbar list
+.navbar__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+//navbar item{
+.navbar__item {
+    a {
+        display: block;
+        text-align: left;
+        padding: .5em;
+        padding: 10px;
+        text-decoration: none;
+        font-family: $georama;
+        font-weight: $bold;
+        color: $white;
+    }
+}
+
+//navbar hr
+.navbar__hr {
+    position: relative;
+    top: 2em;
+}

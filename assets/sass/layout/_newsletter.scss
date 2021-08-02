@@ -1,0 +1,15 @@
+/*newsletter*/
+
+//newsletter
+.newsletter__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue-soft;
+    padding: 2em;
+    h3,
+    h5 {
+        color: $white;
+    }
+}

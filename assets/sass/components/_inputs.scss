@@ -1,0 +1,21 @@
+/*inputs*/
+
+//newsletter input
+.newsletter__input {
+    input {
+        font-family: $georama;
+        font-weight: $bold;
+        border: none;
+    }
+    .newsletter__input-submit {
+        background-color: $cian-soft;
+        color: $gray;
+        &:hover {
+            color: $white;
+        }
+    }
+    .newsletter__input-box {
+        width: 15em;
+        font-weight: $light;
+    }
+}

@@ -1,4 +1,24 @@
+/*card deck*/
+
+//card deck
+.card-deck {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $pink-soft;
+    h3,
+    h5 {
+        color: $smoky-black;
+    }
+}
+
+//card-deck__card
+.card-deck__card {
+    margin: 20px;
+}
+
+//card deck img
 .card-deck__img {
-    max-width: 30%;
-    height: auto;
+    max-width: 100%;
+    height: 75vh;
 }
